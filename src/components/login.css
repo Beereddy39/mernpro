@@ -1,0 +1,112 @@
+/* Resetting default margin and padding, and setting full height for body and html */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Full page container setup */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #f0f0f0; /* Light background */
+}
+
+/* Login box setup */
+.login-box {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 900px; /* Max width of the form */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border: 2px solid #e0e0e0;
+}
+
+/* Header section styles */
+h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Subtitle */
+.subtitle {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Error message styles */
+.error-message {
+  color: #f44336;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+/* Form group styling */
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* Form label */
+.form-group label {
+  display: block;
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+/* Input field styling */
+.form-group input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color:rgb(13, 94, 33); /* Highlight with blue */
+  outline: none;
+}
+
+/* Button styling */
+.login-button {
+  width: 100%;
+  padding: 14px;
+  background-color:rgb(1, 2, 3);
+  border: none;
+  color: white;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color:rgb(1, 5, 9); /* Darker blue on hover */
+}
+
+/* Register link styling */
+.register-link {
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+.register-link a {
+  color:rgb(155, 32, 32);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
