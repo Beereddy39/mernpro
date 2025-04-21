@@ -18,7 +18,7 @@ function EditBook() {
     useEffect(() => {
         const fetchBook = async () => {
             try {
-                const response = await axios.get(`http://localhost:8000/viewBooks/${id}`);
+                const response = await axios.get(`https://backend-p4g5.onrender.com/viewBooks/${id}`);
                 const book = response.data;
                 setIsbn(book.isbn);
                 setTitle(book.title);
@@ -53,7 +53,7 @@ function EditBook() {
         try {
             const token = localStorage.getItem("token");
             const response = await axios.put(
-                `http://localhost:8000/editBook/${id}`,
+                `https://backend-p4g5.onrender.com/editBook/${id}`,
                 { isbn, title, author, genre, publicationYear, status },
                 {
                     headers: {

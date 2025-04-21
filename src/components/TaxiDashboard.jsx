@@ -10,7 +10,7 @@ function LibraryDashboard() {
   const fetchBooks = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await axios.get('http://localhost:8000/viewBooks', {
+      const response = await axios.get('https://backend-p4g5.onrender.com/viewBooks', {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -28,7 +28,7 @@ function LibraryDashboard() {
   const deleteBook = async (bookId) => {
     try {
       const token = localStorage.getItem('token');
-      await axios.delete(`http://localhost:8000/deleteBook/${bookId}`, {
+      await axios.delete(`https://backend-p4g5.onrender.com/deleteBook/${bookId}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
